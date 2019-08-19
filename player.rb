@@ -8,12 +8,12 @@ attr_reader :lives, :name
 
   def lose
     @lives < 1
-      prints("you lose")
+      puts("you lose")
   end
 
   def wrong
-    @lives - 1
-      prints("you lost a life")
+    @lives -= 1
+      puts("you lost a life")
   end
 
 end

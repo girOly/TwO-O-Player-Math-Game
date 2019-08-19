@@ -3,4 +3,4 @@ require "./game"
 
 game = Game.new
 
-game.startGame
+game.start_game
