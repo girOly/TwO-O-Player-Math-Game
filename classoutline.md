@@ -10,7 +10,6 @@
 - Init Round
 - Game loop
 - current player - assigned
-- Game over (Lives === 0)
 #### Round
 - Checks Score
 - initialize new Question
@@ -24,3 +23,4 @@
 ##### Player
 - State: Lives
 - Lose life
+- Game over (Lives === 0)

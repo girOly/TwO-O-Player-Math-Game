@@ -1,5 +1,5 @@
-class player
-attr_reader :lives
+class Player
+attr_reader :lives, :name
 
   def initialize(name)
     @name = name
@@ -7,7 +7,7 @@ attr_reader :lives
   end
 
   def lose
-    @lives = 0
+    @lives < 1
       prints("you lose")
   end
 
