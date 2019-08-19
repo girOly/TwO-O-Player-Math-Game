@@ -14,7 +14,7 @@ require "./question"
       @round = 0
       while @current_player.lives >= 1
         puts("Round #{@round}, Fight! ")
-        puts("it's your turn #{@current_player}!!")
+        puts("it's your turn #{@current_player.to_s}!!")
       @question = Question.new
       @question.new_question
       @answer = gets.chomp.to_i
@@ -26,7 +26,7 @@ require "./question"
       end
       puts("You have #{@current_player.lives} lives remaining")
       switch_player()
-      puts("it's your turn #{@current_player}!!")
+      puts("it's your turn #{@current_player.to_s}!!")
       @question.new_question
       @answer = gets.chomp.to_i
 
